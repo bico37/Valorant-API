@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./ValorantGuns.css" />
+    <script src="./ValorantGuns.js" defer></script>
+  </head>
+  <body>
+    <div id="content">
+      <div id="animation">
+        <!-- Background -->
+        <div class="background">
+          <div class="background-image"></div>
+        </div>
+        <!-- NAV -->
+        <div class="nav">
+          <!-- Logo -->
+          <a href="https://playvalorant.com/">
+            <div id="logo">
+              <img src="./IMG/nav/logo.png" alt="logo" />
+            </div>
+          </a>
+          <!-- Headline -->
+          <div class="headline" onclick="backStart()">
+            <h1>Valorant-Weapons</h1>
+          </div>
+
+          <div class="more" style="display: none">
+            <div id="showAllWeapons" onclick="showAll()">
+              <h2>Show All</h2>
+            </div>
+            <div id="showSkins" onclick="showSkins()">
+              <h2>Skins</h2>
+            </div>
+          </div>
+        </div>
+
+        <div id="buttonToUnterS" onclick="buttonClicked()">
+          <h2>Show Guns</h2>
+        </div>
+
+        <div id="erg">
+          <div id="boxes" style="display: none">
+            <div id="box1">
+              <h3 id="h3Headline" onclick="randomW()">Random Weapon</h3>
+              <div id="randomW" style="display: none">
+                <div id="ergRandom"></div>
+              </div>
+            </div>
+            <div id="box2">
+              <h3 id="h3Headline" onclick="clickW()">Click through Weapons</h3>
+              <div id="clickW" style="display: none">
+                <div id="ergClick"></div>
+                <div id="arrows">
+                  <span class="arrowLeft" onclick="goLeft()"
+                    ><img src="./IMG/arrowL.png" alt=""
+                  /></span>
+                  <span class="arrowRight" onclick="goRight()"
+                    ><img src="./IMG/arrowR.png" alt=""
+                  /></span>
+                </div>
+              </div>
+            </div>
+            <div id="box3">
+              <h3 id="h3Headline" onclick="searchW()">Search for Weapon</h3>
+              <div id="searchW" style="display: none">
+                <input id="inputF" type="text" value="" placeholder="Search for Weapon"/>
+                <input type="button" id="inputB" value="Submit" onclick="submitSearch()"/>
+                <div id="ergSearch" onclick=""></div>
+              </div>
+            </div>
+          </div>
+          <!-- ALL GUNS -->
+          <div id="allGuns" style="display: none">
+            <div id="grid1"></div>
+            <div id="grid2"></div>
+          </div>
+
+          <!-- SHOW SKINS -->
+          <div id="skinsGuns" style="display: none">
+            <div id="slideGuns"></div>
+            <div id="slideSkins"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
